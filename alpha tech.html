@@ -1,0 +1,953 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<title> Naleb Tech and Language | Home</title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+<style type="text/css">
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    list-style:none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top:3rem;
+}
+:root{
+    --bg-color:#ffffff;
+    --secound-bg-color: #f9f9f9;
+    --text-color: #fff;
+    --secound-color: #161616;
+    --main-color:#ef0456;
+    --other-color: #6a6a6a;
+    --big-font: 5.7rem;
+    --h2-font: 3.8rem;
+    --p-font: 1rem;
+}
+ body{
+   background-Color: black;/* color var(--bg-color);*/
+   color: var(--text-color);
+}
+ header{
+     position: fixed;
+     width: 100%;
+     right:0;
+     top: 0;
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: #000;
+     padding: 15px 6%;
+}
+.logo{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+ span {
+   color: var(--main-color);
+}
+.navlist{
+    display:flex;
+}
+.navlist li{
+    position: relative;
+}
+.navlist a{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.navlist a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left:0;
+    bottom: -4px;
+    background: var(--main-color);
+    transition: ease .40s;
+}
+.navlist a:hover::after{
+    width:100%;
+}
+#menu-icon{
+    font-size: 26px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.h-btn a{
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 8px 26px;
+    border: 2px solid transparent;
+    transition: ease .40s;
+}
+.h-btn .sign-in{
+    color: var(--text-color);
+    background: var(--main-color);
+    border-radius: 30px;
+}
+.h-btn .sign-in:Hover{
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
+ section{
+    padding: 120px 16%;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url(); /*caleb remember to add an image here*/
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: black;
+}
+.home-text{
+    padding-top: 120px;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--text-color);
+    line-height: 1.11;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0 0 25px;
+}
+.home-text h4{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    line-height: 1.21;
+    font-weight:700;
+    margin-bottom: 40px;
+}
+.btn{
+    display: inline-block;
+    font-size:14px;
+    font-weight:600;
+    padding: 16px 33px;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    transition: ease .30s;
+    
+}
+.btn:hover{
+    transform: translateY(-10px);
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+.count{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.count li {
+    margin-right: 55px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.count span{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+/*about css*/
+.about{
+    background: var(--bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+}
+.about-img img{
+    max-width: 100%;
+    width: 490px;
+    height: auto;
+}
+.about-text h2{
+    font-size: var(--h2-font);
+
+color: var(--secound-color);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+.about-text h5{
+    color: var(--secound-color);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px; 
+}
+.about-text p{
+    font-size: var(--P-font);
+    font-weight: 400;
+    max-width: 570px;
+    line-height: 1.8;
+    color: var(--other-color);
+    margin-bottom: 2.5rem;
+}
+.services{
+    background: var(--secound-bg-color);
+}
+.heading{
+    text-align:center;
+}
+.heading h6{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom:15px;
+    line-height: 1;
+}
+.heading h2{
+    font-size: var(--h2-font);
+    color: var(--secound-color);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.6rem;
+}
+.heading p{
+    font-size:var(--p-font);
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--other-color);
+}
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.4rem;
+}
+.box{
+    background: var(--bg-color);
+    padding: 45px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .35s;
+}
+.box i{
+    color: var(--main-color);
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+}
+.box h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--secound-color);
+}
+.box p{
+    color: var(--other-color);
+    font-size: 16px;
+    line-height: 30px;
+}
+.box:hover{
+    box-shadow: -28px 27px 37.5px rgba(0, 0, 0, 0.53),
+                 10px -19px 37.5px rgba(225, 225, 225, 0.038),
+                 inset 4px -4px 8px rgba(0, 0, 0, 0.53),
+                 inset -5px 5px 12px #ffffff;
+                 z-index: 1;
+                 overflow:hidden;
+                 Transition: 0.10s;               
+}
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4.4rem;
+}
+.col {
+    position:relative;
+}
+.col img{
+    max-width: 100%;
+    width:620px;
+    height: auto;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transition: all .35s;
+}
+.layer:hover{
+    background: linear-gradient(rgba(22,22,22, 0.06)0%, #9f0036 100%);
+}
+.layer h3{
+    position: absolute;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .35s;  
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.Education{
+    background: var(--secound-bg-color);  
+}
+.edu-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 4.4rem;
+    display: inline-block;
+}
+.edu-content .row img{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+.row{
+    padding: 0 0 30px 0;
+    background: var(--bg-color);
+    border-radius: 10px;
+    transition: all .35s;
+    display: inline-block;
+    
+}
+.row h3{
+    font-size: 22px;
+    line-height: 1.45;
+    font-weight: 600;
+    transition: all .35s;
+    margin: 10px 0px 8px 25px;
+    color: var(--secound-color);
+}
+.row h3:hover{
+    color: var(--main-color);
+}
+.row a{
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--other-color);
+    border-bottom: 2px solid transparent;
+
+
+transition: all .35s;
+    margin: 10px 0px 8px 25px;
+}
+.row a:hover{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+.contact {
+    background: #161616;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact h2{
+    color: var(--text-color);
+    font-size: 1.9rem;
+}
+.contact .newsletter{
+    background: var(--bg-color);
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 4px 10px;
+    max-width: 100%;
+    width: 4000px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact .newsletter input{
+    border: none;
+    outline: none;
+}
+.contact .newsletter .cta{
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+.copyright{
+    background: var(--bg-color);
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.copyright p{
+    font-size:14px;
+    font-weight: 500;
+    color: var(--other-color);
+}
+iconify-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transition: all .40s;
+}
+iconify-icon a:hover{
+    transform: translateY(-7px);
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+/* caleb take note more css*/
+@media (max-width: 1380px){
+    header{
+        padding: 18px 2%;
+        transition: .2s;
+    }
+    section{
+        padding: 80px 2%;
+        transition: .3s;
+    }
+    :root{
+        --big-font: 4.7rem;
+        --h2-font: 2.5rem;
+    }
+    .home-text h4{
+        font-size: 1.2rem;
+    }
+    .count span{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1120px){
+    header{
+        padding: 14px 2%;
+    }
+    .home{
+        height: 85vh;
+    }
+    #menu-icon{
+        display: inline-block;
+    }
+    .sign-up{
+        display: none;
+    }
+    .navlist{
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: columm;
+        background: var(--main-color);
+        text-align: left;
+        transition: all .35s ease;
+    }
+    .navlist a{
+        display: block;
+        padding: 1rem;
+        margin: 1.2rem;
+        border-left: 2px solid var(--text-color);
+    }
+    .navlist a:hover{
+        background: var(--text-color);
+        color: var(--secound-color);
+        border: none;
+    }
+    .navlist a::after{
+        display: none;
+    }
+    .commin{
+        display: none;
+    }
+    .navlist .active{
+        top: 100%;
+    }
+}
+@media (max-width: 770px){
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .contact{
+        text-align: center;
+    }
+    .commin{
+        display: none;
+    }
+    .contact h2{
+        font-size: 1.4rem;
+    }
+    .copyright{
+        justify-content: center;
+        text-align: center;
+    }
+    .copyright p{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 750px){
+    :root{
+        --big-font: 3.5rem;
+        --h2-font: 1.9rem;
+        --p-font: 0.9rem;
+    }
+}
+@media (max-width: 630px){
+    section{
+        padding: 90px 4%;
+    }
+    header{
+        padding: 14px 4%;
+    }
+    :root{
+        --big-font: 3.2rem;
+        --h2-font: 1.8rem;
+        --p-font: 0.9rem;
+    }
+    .home-text h4{
+        font-size: 1.2rem;
+    }
+    .count li{
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    .count span{
+        font-size: 1.2rem;
+    }
+}
+/* login */
+.loginbox{
+    position: relative;
+    width:380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow:hidden;
+    display: grid;
+}
+.loginbox::before{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite alternate;
+}
+.loginbox::after{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite alternate;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ form {
+    position: absolute;
+    inset: 2px;
+    padding: 50px 40px;    
+    border-radius: 8px;
+    z-idex: 2;
+    flex-decoration: grid;
+}
+.loginbox h1{
+    color: #ef0456;
+    font-weight: 500;
+    text-align:center;
+    letter-spacing: 0.1em;
+}
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline:none;
+    box-shadow: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.inputBox i{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 2px;
+    background: #ef0456;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events:none;
+    zindex: 9;
+}
+.inputBox input:valid~i,
+.inputBox input:valid~i{
+    height: 44px;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+.links a {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #8f8f8f;
+    text-decoration: beige;
+}
+.links a:hover,
+.links a:nth-child(2) {
+    color: #ef0456;
+}
+ input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 11px 25px;
+    background: #ef0456;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin: 10px;
+}
+ input[type="submit"]:hover{
+    box-shadow: 0 0 25px #ef0456,
+    0 0 25px #ef0456,
+    0 0 50px #ef0456,
+    0 0 100px #ef0456;
+}
+ input[type="submit"]:active{
+     opacity: 0.8;
+ }
+</style>
+</head>
+<body>
+
+<!-----header------>
+<header>
+<a href="#" class="logo"><p style="text-shadow: 0 0 20px #ff008c;"> < / Naleb <span> Tech> </span> </p></a>
+<div class="bx bx-menu" id="menu-icon"></div>
+
+<ul class="navlist">
+     <li><a href="#home">Home  </a></li>
+      <li><a href="#about">About</a></li>
+       <li><a href="#services">Services </a></li>
+        <li><a href="#portfolio">Profiles</a></li>
+         <li><a href="#Education">Education</a></li>
+          <li><a href="#contact">Contact </a></li>
+
+</ul>
+
+
+<div class="h-btn">
+ <!--   <a href="#" class="sign-up">Sign Up</a> -->
+    <a href="#login" class="sign-in">Sign in</a>
+  </div>
+</header>
+
+
+<!-----home section------>
+<section class="home" id="home">
+   <div class="home-text">
+     <h1>Naleb Tech <br> <span>Software Developing Firm </span></h1>
+     <h4>Available All Over the Globe</h4>
+     <a href="#about" id="btn" class="btn">Read More</a>
+     
+     <!--- <ul class="count">
+        <li><span>10k+</span> <br>Global Happy Clients </li>
+        <li><span>2k+</span> <br>Projects Completed </li>
+        <li><span>1k+</span> <br>Reccomendations </li>
+     </ul> --->
+   </div>
+   
+</section>
+
+
+<!-----About section------>
+ <section class="about" id="about">
+   <div class="about-img">
+      <img src="cloud.jpg">
+   </div>
+   <div class="about-text">
+        <h2>About Naleb </h2>
+        <h5>Software Developing <span> & Designing </span></h5>
+        <p>Naleb is a software and cloud developing firm. We can provide clean and pixel perfect services. We make cloud based websites apps and UI designs. A responsive, dynamic or a static software based on the clients need makes online website, app or bussiness accessible to all users, regardless of their device. We certainly believe that Tech and Language efficiency are the greatest assest of this evolving era.</p>
+        <a href="#" class="btn">Learn More</a>
+   </div>
+ </section>
+ 
+<!-----Service section------>
+<section class="services" id="services">
+<div class="heading">
+   <h6>Creative Services </h6>
+   <h2>Services We Offer</h2>
+   <p>Awesome Experiences that keep customers coming back <br> Quality is Our Priority</p>
+</div>
+<div class="services-contents">
+    <div class="box">
+      <i class='bx bx-mobile-alt'></i>
+      <h3>App Development</h3>
+      <p>There are many business owners in the industry who think that mobile applications are meant for big brands. This is absolutely wrong. There are a lot of small and midsize companies which are following the trend of mobile application. They understand that an efficient mobile strategy means more than a mobile friendly website. The sooner you understand this, the better it is for your business. Let us make you a beautiful app</p>
+   </div>
+
+   <div class="box">
+      <i class='bx bx-layer'></i>
+      <h3>Web Design</h3>
+      <p>A website helps create brand awareness and showcasing your brand to prospective customers. It helps to establish your image by letting the audience know who you are and what you represent. A website provides reliable information to the consumers, which helps in setting your business apart from the competitors. Let us make you a beautiful Website</p>
+   </div>
+   
+  
+   <div class="box">
+      <i class='bx bx-lock'></i>
+      <h3>Cloud Security</h3>
+      <p>The size of the company is not a matter when it comes to security. Even the mobile phone has many passwords and pattern lock to protect the user data. Hackers are spread every place to snap the data whenever there is a poor firewall. So Security is the first one mandatory to be checked periodically. </p>
+   </div>
+   
+   <div class="box">
+      <i class='bx bx-cloud'></i>
+      <h3>Cloud computing Services</h3>
+      <p>A single type of cloud computing may not be accurate for all kinds of businesses. That is why there are many different clouds out there, each offering different kinds of deployments and services to help provide us with a precise solution for our needs. Aplha can aid you with Cloud computing deployment</p>
+   </div>
+   
+   <div class="box">
+      <i class='bx bx-wifi'></i>
+      <h3>Cyber Security and Ethical Hacking</h3>
+      <p>Looking at the world through the eyes of the hacker can be a scary thing. When you realize how vulnerable your home or office network is, the first thing you want to do is find a way to make online Defensive Security  but perhaps we can help you with your computer software protection, Network Security and encryption and Web Application Security</p>
+   </div>
+</div>
+</section>
+
+
+<!-----Portfolio section------>
+<section class="portfolio" id="portfolio">
+
+<div class="heading">
+   <h6>Creative Profiles </h6>
+   <h2 style="color: white;">Solutions We Offer </h2>
+   <p>Let's bring you Awesome Experiences and IT solutions <br> Quality is Our Priority</p>
+</div>
+
+<div class="portfolio-content">
+  <div class="col">
+   <img src="Alpha1.jpg">
+   <div class="layer">
+     <h3>Putting Bussiness Online </h3>
+   </div>
+  </div>
+</div>
+
+<div class="portfolio-content">
+  <div class="col">
+   <img src="Alpha2.jpg">
+   <div class="layer">
+     <h3>Web Bussiness plan </h3>
+   </div>
+  </div>
+</div>
+
+<div class="portfolio-content">
+  <div class="col">
+   <img src="Alpha3.jpg">
+   <div class="layer">
+     <h3>Securing Networks </h3>
+   </div>
+  </div>
+</div>
+</section>
+
+<!-----Education section------>
+
+
+<section class="Education" id="Education">
+
+<div class="heading">
+   <h6>Education</h6>
+   <h2 style="color: Black;">IT and Language</h2>
+   <p>We are highly glad to anncounce that <br>we are cooporating with Naleb's Foundation in order to bring you better IT and language trainings </p>
+  
+  <div class="edu-content">
+    <div class="row">
+     <img src="">
+      <h3> Nardos and Caleb passionate in teaching english have now brought you a winning package. <br> With both the right IT and language trainings you become unstopable</h3>
+      <a href=""></a>
+    </div>
+  </div>
+  
+  <div class="edu-content">
+    <div class="row">
+     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YwHXniAUMQo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      
+    </div>
+  </div>
+  
+  <div class="edu-content">
+    <div class="row">
+     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WrSi3sCVGck?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      
+    </div>
+  </div>
+  <center><a href="#" style="margin-top: 5em; text-align: center; color: #000;">Watch More</a></center>
+</div>
+    </section>
+
+
+
+<!-----Login section----->
+<section class="login" id="login">
+
+<div class="heading">
+   <h6>Learn to code and be a game changer</h6>
+   <h2 style="color: white;">Login to a Software utopia</h2>
+   <p>For more amazing features<br> Download our App</p>
+</div>
+<h1 style="font-size: 5em;text-shadow: 0 0 20px #ff008c; text-align:center;">Coming Soon</h1>
+<div class="wht" style="grid-template-columns: repeat(2, 2fr); display: inline-flex; margin: 2rem;">
+<div class="loginbox">
+     <form autocomplete="off">
+        <h1>Sign in</h1>
+         <div class="inputBox">
+           <input type="Email" placeholder="Email" required>          
+           <i></i>
+         </div>
+         <div class="inputBox">
+           <input type="password" placeholder="Password" required>          
+           <i></i>
+         </div>
+         <div class="links">
+           <a href="#">Forgot Password?</a>
+           <a href="#">Sign Up</a>
+         </div>
+     
+       <input type="submit" value="Login">
+     
+     </form>
+     
+   </div>
+   <div style="margin-left: 5rem;">
+<img src="comin.png" width="700px" height="500px" class="commin">
+</div>
+</div>
+    </section>
+
+<!-----Contact section------>
+<section class="contact" id="contact">
+    
+  <center><h2>Contact Us for enquires</h2>
+   <P>Our Address</P></center>
+   <div class="form" style="display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    align-items: center;
+    grid-gap: 2rem; margin:3em; margin-top: 5em;" >
+    <div class="num">
+   <h4>Ethiopia Addis Ababa</h4>
+   <i class='bx bx-location'></i>
+ <h4 style="letter-spacing:2px;">+251964544598<br>+251923781678<br>+251985185857</h4>
+    </div>
+
+      
+    <div class="mail">
+        <a href="https://reachnaleb@gmail.com" style="color: white; letter-spacing:1px;">info@Naleb.com</a><br>
+        <a href="https://reachnaleb2@gmail.com" style="color: white; letter-spacing:1px;">edu@Naleb.com</a>
+        
+    </div>
+     </div>
+</section>
+
+<!-----copyright------>
+<div class="copyright">
+  <p>© 2022 All rights reserved | Naleb Tech and language Foundations </p>
+    <div class="icon">
+       <a href="https://www.facebook.com/profile.php?id=100085214613605"><iconify-icon icon="akar-icons:facebook-fill"></iconify-icon></a>
+       <a href="https://www.tiktok.com/@naleb_software_group?is_from_webapp=1&sender_device=pc"><iconify-icon icon="akar-icons:tiktok-fill"></iconify-icon></i></a>
+       <a href="https://www.instagram.com/naleb_language_and_software"><iconify-icon icon="line-md:instagram"></iconify-icon></a>
+       <a href="#"><iconify-icon icon="ant-design:youtube-outlined"></iconify-icon></a>
+       
+    </div>
+ </div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-----link to js---->
+<script type="text/javascript">
+
+//defs
+  let menu = document.querySelector('#menu-icon');
+  let navlist = document.querySelector('navlist');
+  
+ menu.onclick = () => {
+     menu.classList.toggle('bx-x');
+     navlist.classList.toggle('active');
+ };
+ 
+ window.onscroll = () => {
+     menu.class.List.remove('bx-x');
+     navlist.classList.remove('active');
+ };
+ 
+ const sr = ScrollReveal ({
+     distance: '40px',
+     duration: 2600,
+     reset: true,
+ })
+ 
+sr.reveal('.home-text',{delay:300, origin:'left'})
+sr.reveal('.about,.services,.portfolio,.Education,.login, .login, .contact,.copyright',{delay:100, orgin:'bottom'})
+
+
+
+</script>
+</body>
+</html>
